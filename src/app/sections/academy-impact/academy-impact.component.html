@@ -1,0 +1,25 @@
+<section class="academy-wrap">
+  <div class="container">
+    <div class="academy-panel panel ink-outline">
+      <div class="academy-eyebrow">{{ 'academyImpact.kicker' | t }}</div>
+      <h2 class="academy-title">{{ 'academyImpact.title' | t }}</h2>
+
+      <p class="academy-lead">{{ 'academyImpact.p1' | t }}</p>
+
+      <div class="academy-copy-group">
+        <p class="academy-copy">{{ 'academyImpact.p2' | t }}</p>
+        <p class="academy-copy">{{ 'academyImpact.p3' | t }}</p>
+        <p class="academy-copy academy-copy-strong">{{ 'academyImpact.p4' | t }}</p>
+      </div>
+
+      <div class="academy-cta">
+        <button type="button" class="btn primary" (click)="goTo('projects')">
+          {{ 'about.cta.work' | t }}
+        </button>
+        <button type="button" class="btn ghost" (click)="goTo('contact')">
+          {{ 'about.cta.contact' | t }}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

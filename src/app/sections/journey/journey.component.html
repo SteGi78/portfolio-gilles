@@ -1,0 +1,25 @@
+<section class="journey" [attr.aria-label]="('journey.aria' | t)">
+  <div class="head">
+    <div class="kicker">{{ 'journey.kicker' | t }}</div>
+    <h2 class="title">{{ 'journey.title' | t }}</h2>
+    <p class="subtitle">{{ 'journey.subtitle' | t }}</p>
+  </div>
+
+  <div class="slider panel ink-outline">
+    <div class="slide">
+      <div class="tag">{{ ('journey.slides.' + currentKey + '.tag') | t }}</div>
+      <h3 class="slide-title">{{ ('journey.slides.' + currentKey + '.title') | t }}</h3>
+      <p class="text">{{ ('journey.slides.' + currentKey + '.text') | t }}</p>
+    </div>
+
+    <div class="controls">
+      <button type="button" class="btn ghost" (click)="prev()">{{ 'journey.prev' | t }}</button>
+      <div class="dots" aria-hidden="true">
+        <span class="dot" [class.active]="index === 0"></span>
+        <span class="dot" [class.active]="index === 1"></span>
+        <span class="dot" [class.active]="index === 2"></span>
+      </div>
+      <button type="button" class="btn primary" (click)="next()">{{ 'journey.next' | t }}</button>
+    </div>
+  </div>
+</section>

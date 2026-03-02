@@ -1,0 +1,29 @@
+<section class="legal">
+  <div class="container">
+    <h1>{{ 'privacy.title' | t }}</h1>
+
+    <div class="card">
+      <h2>{{ 'privacy.cards.general.title' | t }}</h2>
+      <p>{{ 'privacy.cards.general.p' | t }}</p>
+    </div>
+
+    <div class="card">
+      <h2>{{ 'privacy.cards.logs.title' | t }}</h2>
+      <p>{{ 'privacy.cards.logs.p' | t }}</p>
+    </div>
+
+    <div class="card">
+      <h2>{{ 'privacy.cards.contact.title' | t }}</h2>
+      <p>{{ 'privacy.cards.contact.p' | t }}</p>
+      <p>
+        <strong>{{ 'privacy.cards.contact.contactLabel' | t }}:</strong>
+        <a [href]="'mailto:' + email">{{ email }}</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>{{ 'privacy.cards.external.title' | t }}</h2>
+      <p>{{ 'privacy.cards.external.p' | t }}</p>
+    </div>
+  </div>
+</section>

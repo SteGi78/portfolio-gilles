@@ -1,0 +1,50 @@
+<section class="wrap">
+  <div class="container about-shell">
+    <div class="media panel ink-outline">
+      <img
+        src="assets/img/stephan-800w.webp"
+        [attr.alt]="('common.profileAlt' | t)"
+        loading="lazy"
+        decoding="async"
+        width="720"
+        height="900"
+      />
+    </div>
+
+    <div class="content panel ink-outline">
+      <div class="eyebrow">{{ 'about.kicker' | t }}</div>
+      <h2 class="title">{{ 'about.title' | t }}</h2>
+      <p class="lead">{{ 'about.lead' | t }}</p>
+      <p class="copy">{{ 'about.p1' | t }}</p>
+      <p class="copy">{{ 'about.p2' | t }}</p>
+
+      <div class="facts">
+        <div class="fact">
+          <span class="label">{{ 'about.facts.location.label' | t }}</span>
+          <strong>{{ 'about.facts.location.value' | t }}</strong>
+        </div>
+        <div class="fact">
+          <span class="label">{{ 'about.facts.focus.label' | t }}</span>
+          <strong>{{ 'about.facts.focus.value' | t }}</strong>
+        </div>
+        <div class="fact">
+          <span class="label">{{ 'about.facts.strengths.label' | t }}</span>
+          <strong>{{ 'about.facts.strengths.value' | t }}</strong>
+        </div>
+        <div class="fact">
+          <span class="label">{{ 'about.facts.current.label' | t }}</span>
+          <strong>{{ 'about.facts.current.value' | t }}</strong>
+        </div>
+      </div>
+
+      <div class="cta">
+        <button type="button" class="btn primary" (click)="goTo('projects')">
+          {{ 'about.cta.work' | t }}
+        </button>
+        <button type="button" class="btn ghost" (click)="goTo('contact')">
+          {{ 'about.cta.contact' | t }}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

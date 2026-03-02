@@ -1,0 +1,238 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-h);
+  background: rgba(245, 245, 247, 0.82);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--p-line);
+  color: var(--p-text);
+  display: flex;
+  align-items: center;
+  z-index: 50;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 38px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid var(--p-line);
+  color: var(--p-text-faint);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  transition: border-color 160ms ease, color 160ms ease, background 160ms ease;
+}
+
+.lang:hover {
+  border-color: var(--p-line-strong);
+  color: var(--p-text);
+}
+
+.lang .sep { opacity: .45; }
+.lang span { opacity: .62; }
+.lang span.active {
+  opacity: 1;
+  color: var(--p-text);
+}
+
+.nav {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 0;
+  color: var(--p-text-faint);
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 12px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 140ms ease, background 140ms ease;
+}
+
+.nav-btn::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 6px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--p-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 140ms ease;
+}
+
+.nav-btn:hover {
+  color: var(--p-text);
+  background: rgba(255,255,255,0.58);
+}
+
+.nav-btn:hover::after { transform: scaleX(1); }
+
+.nav-btn:focus-visible {
+  outline: 2px solid rgba(0,102,204,0.28);
+  outline-offset: 3px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contactBtn {
+  min-height: 40px;
+  background: var(--p-accent);
+  border: 1px solid var(--p-accent);
+  color: var(--p-text-inverse);
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.contactBtn:hover {
+  background: var(--p-accent-2);
+  border-color: var(--p-accent-2);
+  transform: translateY(-1px);
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  border: 1px solid var(--p-line);
+  background: rgba(255,255,255,0.78);
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+.burger {
+  display: none;
+  border: 1px solid var(--p-line);
+  background: rgba(255,255,255,0.78);
+  color: var(--p-text);
+  border-radius: 12px;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  display: block;
+}
+
+.backdrop {
+  position: fixed;
+  inset: var(--header-h) 0 0;
+  background: rgba(29,29,31,0.14);
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease;
+  z-index: 40;
+}
+
+.backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: var(--header-h);
+  right: 0;
+  left: 0;
+  background: rgba(255,255,255,0.96);
+  border-bottom: 1px solid var(--p-line);
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+  transform: translateY(-12px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 150ms ease, opacity 150ms ease;
+  z-index: 45;
+  box-shadow: 0 16px 32px rgba(15,23,42,0.08);
+}
+
+.mobile-drawer.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav {
+  display: grid;
+  gap: 8px;
+}
+
+.mobile-nav .nav-btn {
+  text-align: left;
+  padding: 12px 12px;
+  background: #ffffff;
+  border: 1px solid var(--p-line);
+  color: var(--p-text);
+}
+
+.mobile-links {
+  display: grid;
+  gap: 8px;
+}
+
+.link {
+  color: var(--p-text-faint);
+  text-decoration: none;
+}
+
+.link:hover { color: var(--p-accent); }
+
+@media (max-width: 980px) {
+  .nav { display: none; }
+  .burger { display: inline-flex; }
+}
+
+@media (max-width: 640px) {
+  .contactBtn { display: none; }
+}
+
+@media (max-width: 520px) {
+  .logo { display: none; }
+}

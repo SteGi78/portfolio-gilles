@@ -1,0 +1,400 @@
+{
+  "hero": {
+    "eyebrow": "Frontend Developer | Ziel Fullstack",
+    "title": {
+      "before": "Hi, ich bin ",
+      "name": "Stephan Gilles",
+      "after": "Ich bringe industrielle Präzision in den Browser."
+    },
+    "subtitle": "Vom CNC-Profi zum Frontend Developer: Ich entwickle performante Angular-Anwendungen mit der Genauigkeit eines Feinmechanikers.",
+    "cta": {
+      "projects": "Projekte ansehen",
+      "contact": "Kontakt aufnehmen"
+    },
+    "meta": {
+      "compact": "Aachen · Angular · TypeScript · Remote"
+    },
+    "scroll": "Mehr erfahren",
+    "ticker": {
+      "0": "Angular · TypeScript",
+      "1": "Wartbare Architekturen",
+      "2": "Saubere UI-Flows",
+      "3": "Aachen · Hybrid / Remote"
+    }
+  },
+  "skills": {
+    "title": "Tech-Stack",
+    "subtitle": "Ich entwickle Frontends, die modular gedacht und für die Zukunft skalierbar sind – technisches Systemdenken trifft auf modernen Code.",
+    "frontend": "Frontend",
+    "tools": "Tools",
+    "workflow": "Arbeitsweise",
+    "items": {
+      "angular": "Angular (Standalone, Routing, Komponenten)",
+      "ts": "TypeScript",
+      "js": "JavaScript (ES6+)",
+      "html": "Semantisches HTML5",
+      "scss": "SCSS / Flexbox / Grid",
+      "responsive": "Responsive Design",
+      "git": "Git / GitHub",
+      "vscode": "VS Code",
+      "devtools": "Chrome DevTools",
+      "npm": "npm",
+      "rest": "REST-API Integration",
+      "clean": "Clean Code & Refactoring",
+      "components": "Modulare Architektur",
+      "refactoring": "Optimierung bestehender Logik",
+      "team": "Agile Teamarbeit"
+    },
+    "icons": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "typescript": "TypeScript",
+      "angular": "Angular",
+      "firebase": "Firebase",
+      "git": "Git",
+      "rest": "REST API",
+      "scrum": "Scrum",
+      "material": "Material Design",
+      "growth": "Lernkurve"
+    },
+    "adapt": {
+      "title": "Schnelle Integration?",
+      "text": "Neue Anforderungen schrecken mich nicht ab. Ich arbeite mich methodisch ein, setze sauber um und liefere früh produktive Ergebnisse.",
+      "cta": "Kurz sprechen"
+    },
+    "interest": {
+      "title": "Aktueller Fokus",
+      "text": "Ich vertiefe derzeit automatisiertes Testing und Backend-Grundlagen, um meine Expertise in Richtung Fullstack auszubauen."
+    }
+  },
+  "projects": {
+    "title": "Projekte",
+    "subtitle": "Auswahl meiner Arbeiten – strukturiert umgesetzt, nachvollziehbar dokumentiert und auf Wartbarkeit ausgelegt.",
+    "badge": {
+      "featured": "Highlight",
+      "showcase": "Projekt"
+    },
+    "links": {
+      "live": "Live-Demo",
+      "code": "Code auf GitHub",
+      "details": "Projekt-Details"
+    },
+    "items": {
+      "join": {
+        "title": "Join – Kanban Board",
+        "desc": "Agiles Task-Management: Klare Abläufe, Rollen-Zuständigkeiten und Zusammenarbeit im Team mit Git / GitHub."
+      },
+      "elpollo": {
+        "title": "El Pollo Loco",
+        "desc": "Canvas-Game auf Basis von OOP: Zustandsverwaltung, Kollisionen und saubere Trennung der Spiellogik."
+      },
+      "portfolio": {
+        "title": "Angular Portfolio",
+        "desc": "Diese Applikation selbst: Fokus auf modulares Routing, i18n-Architektur und performantes UI."
+      },
+      "pokedex": {
+        "title": "Pokédex App",
+        "desc": "Reaktive Anwendung mit API-Anbindung, Such-Filtern und professionellem Handling asynchroner Daten."
+      },
+      "icodome": {
+        "title": "Icodome – Planung",
+        "desc": "Konzeptstudie: Überführung komplexer Anforderungen in klare Logik – ein Beleg für mein Systemdenken."
+      }
+    },
+    "sections": {
+      "software": {
+        "title": "Frontend-Projekte",
+        "subtitle": "Angular, TypeScript & skalierbare UI-Strukturen."
+      },
+      "engineering": {
+        "title": "Planung & Konzepte",
+        "subtitle": "Systematisches Denken, Präzision und Dokumentation."
+      }
+    },
+    "tabs": {
+      "academy": "Software-Entwicklung",
+      "private": "Logik & Planung",
+      "academyTitle": "Software-Projekte",
+      "privateTitle": "Planung & Konzepte",
+      "academyIntro": "Ergebnisse aus meiner intensiven Ausbildung – Fokus auf Struktur, Clean Code und Wartbarkeit.",
+      "privateIntro": "Konzeptarbeit, Strukturplanung und saubere Dokumentation – direkt übertragbar auf komplexe Softwareprojekte."
+    },
+    "academy": {
+      "join": {
+        "title": "JOIN – Task Manager",
+        "subtitle": "Agile Teamarbeit: Strukturierte Abläufe und Rollenverteilung.",
+        "b1": "Wiederverwendbare Komponenten-Architektur",
+        "b2": "Strikte Trennung von UI und Business-Logik",
+        "b3": "Professioneller Team-Workflow mit Git / GitHub"
+      },
+      "pokedex": {
+        "title": "Pokédex (Angular)",
+        "subtitle": "Datenverarbeitung, API-Anbindung und reaktive Filter.",
+        "b1": "Performanter Abruf von REST-Daten",
+        "b2": "Strukturiertes Routing und Datenfluss",
+        "b3": "Vollständig responsives Interface"
+      },
+      "elpollo": {
+        "title": "El Pollo Loco",
+        "subtitle": "JavaScript OOP: Game-Loop und State-Management.",
+        "b1": "Präzises Timing und Logik-States",
+        "b2": "Objektorientierte Struktur für Erweiterbarkeit",
+        "b3": "Saubere Implementierung von Spielmechaniken"
+      },
+      "portfolio": {
+        "title": "Portfolio (Angular)",
+        "subtitle": "Modular aufgebaut, zweisprachig und wartungsfreundlich.",
+        "b1": "Zentral gesteuertes i18n (DE/EN)",
+        "b2": "Optimiertes Routing-Konzept",
+        "b3": "Einfach erweiterbare Code-Basis"
+      }
+    },
+    "private": {
+      "icodome": {
+        "title": "Privates Traumhaus Projekt (Aktuell erst mal zurück gestellt)",
+        "subtitle": "Drei Ansichten einer Vorentwurfsstudie – Analyse, Struktur und visuelle Logik.",
+        "desc": "Dieses Projekt von mir aus 2020 zeigt, dass ich kein Problem habe, sachen anders anzugehen!"
+      }
+    }
+  },
+  "nav": {
+    "skills": "Tech-Stack",
+    "projects": "Projekte",
+    "about": "Über mich",
+    "academyImpact": "Wendepunkt",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum",
+    "journey": "Mein Weg",
+    "setup": "Setup"
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "role": "Frontend Developer",
+    "location": "Aachen, Deutschland"
+  },
+  "about": {
+    "kicker": "Meine Story",
+    "title": "Vom Werkstück zum Quellcode",
+    "p1": "Früher habe ich Maschinen auf den Mikrometer genau programmiert. Heute mache ich dasselbe mit Interfaces. Was sich geändert hat? Das Medium. Was geblieben ist? Mein Anspruch an absolute strukturelle Integrität.",
+    "p2": "In der Welt der CNC-Fertigung gibt es keinen Platz für 'vielleicht'. Diese Mentalität bringe ich in meine Angular-Projekte: sauberer Datenfluss, wartbare Komponenten und ein Code-Design, das auch bei hoher Komplexität nicht nachgibt.",
+    "timeline": {
+      "title": "Expertise & Erfahrung",
+      "items": {
+        "0": {
+          "year": "Büro",
+          "text": "Organisation, Prozessverständnis und verlässliche Kommunikation."
+        },
+        "1": {
+          "year": "CNC",
+          "text": "Technische Akribie, systematische Fehlersuche und hohes Qualitätsbewusstsein."
+        },
+        "2": {
+          "year": "Frontend",
+          "text": "Angular, TypeScript & SCSS: Fokus auf Komponenten-Logik und UI-Struktur."
+        },
+        "3": {
+          "year": "Heute",
+          "text": "Junior Frontend Developer – bereit, im Team Verantwortung zu übernehmen und Features methodisch umzusetzen."
+        }
+      }
+    },
+    "cta": {
+      "work": "Projekte ansehen",
+      "contact": "Kontakt"
+    },
+    "facts": {
+      "location": {
+        "label": "Standort",
+        "value": "Aachen"
+      },
+      "focus": {
+        "label": "Fokus",
+        "value": "Angular · TypeScript · Frontend"
+      },
+      "strengths": {
+        "label": "Stärken",
+        "value": "Struktur · Präzision · Belastbarkeit"
+      },
+      "current": {
+        "label": "Status",
+        "value": "Bereit für neue Herausforderungen"
+      },
+      "signature": {
+        "label": "Profil",
+        "value": "Büro · CNC · Frontend"
+      }
+    },
+    "lead": "Ich suche keine Standard-Jobs, sondern Herausforderungen, bei denen technisches Systemdenken den Unterschied macht.",
+    "bullets": {
+      "location": "Aachen – offen für Hybrid- oder Remote-Modelle.",
+      "mind": "Ruhig, analytisch und lösungsorientiert.",
+      "hook": "Hohe Lernbereitschaft – schnelle Einarbeitung und früh sichtbare Ergebnisse."
+    }
+  },
+  "academyImpact": {
+    "kicker": "Der Beweis",
+    "title": "Wenn Logik zur Lösung wird",
+    "p1": "2023 war das Jahr der Neuorientierung. Was als gesundheitliche Notwendigkeit begann, entpuppte sich schnell als meine größte Chance: Coden!",
+    "p2": "In der Developer Akademie habe ich nicht nur Syntax gelernt, sondern wie man komplexe Systeme von der ersten Idee, bis zum finalen code aufbaut! Mein bisher erfolgreichtes Projekt ist ein Gatekeeper-Tool für Mathematische Vorprüfungen.",
+    "p3": "Der Härtetest für mein Tool, folgte am 26.01.2026: Meine Live Präsentation im Forschungszentrum Jülich vor Prof. Dr. Dr. Thomas Lippert, wo mein Tool sauber geliefert hat."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "Sie suchen einen Junior Frontend Developer, der präzise arbeitet und Angular-Projekte sauber vorantreibt? Dann freue ich mich auf den Austausch mit Ihnen.",
+    "actions": {
+      "write": "E-Mail schreiben",
+      "copy": "Adresse kopieren"
+    },
+    "toast": {
+      "copied": "Kopiert! ✅"
+    },
+    "links": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+    "card": {
+      "title": "Auf einen Blick",
+      "items": {
+        "location": "Aachen / Remote",
+        "focus": "Angular & TypeScript",
+        "projects": "JOIN · Pokédex · El Pollo Loco"
+      }
+    },
+    "hint": {
+      "title": "Unkompliziert",
+      "text": "Eine kurze Nachricht genügt – ich melde mich zeitnah bei Ihnen."
+    },
+    "form": {
+      "title": "Direktnachricht",
+      "name": {
+        "label": "Ihr Name",
+        "ph": "Vollständiger Name",
+        "err": "Bitte geben Sie Ihren Namen an."
+      },
+      "email": {
+        "label": "Ihre E-Mail",
+        "ph": "beispiel@firma.de",
+        "err": "Bitte geben Sie eine gültige E-Mail-Adresse an."
+      },
+      "message": {
+        "label": "Ihre Nachricht",
+        "ph": "Wie kann ich Sie unterstützen?",
+        "err": "Die Nachricht ist noch etwas zu kurz."
+      },
+      "privacy": "Ich habe die Datenschutzerklärung gelesen.",
+      "privacyErr": "Bitte bestätigen Sie die Datenschutzerklärung.",
+      "submit": "Nachricht absenden",
+      "note": "Der Versand erfolgt über Ihren Standard-E-Mail-Client."
+    }
+  },
+  "imprint": {
+    "title": "Impressum",
+    "cards": {
+      "tmc": {
+        "title": "Verantwortlich",
+        "name": "Stephan Gilles",
+        "location": "Aachen, Deutschland",
+        "emailLabel": "E-Mail"
+      },
+      "content": {
+        "title": "Haftung für Inhalte",
+        "p": "Gemäß § 7 Abs.1 TMG bin ich für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich."
+      },
+      "links": {
+        "title": "Haftung für Links",
+        "p": "Für die Inhalte extern verlinkter Seiten sind ausschließlich deren Betreiber verantwortlich. Eine permanente Kontrolle ohne konkrete Anhaltspunkte ist nicht zumutbar."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Datenschutz",
+    "cards": {
+      "general": {
+        "title": "Datenerhebung",
+        "p": "Der Schutz Ihrer Daten hat Priorität. Diese Webseite kann grundsätzlich ohne die Angabe personenbezogener Daten genutzt werden."
+      },
+      "logs": {
+        "title": "Protokollierung",
+        "p": "Der Web-Provider speichert automatisch Informationen in Server-Logfiles, die Ihr Browser übermittelt (z.B. Browsertyp, Uhrzeit)."
+      },
+      "contact": {
+        "title": "Kontaktaufnahme",
+        "p": "Bei der Kontaktaufnahme per E-Mail werden Ihre Angaben zum Zwecke der Bearbeitung der Anfrage sowie für den Fall von Anschlussfragen gespeichert.",
+        "contactLabel": "Kontakt"
+      },
+      "external": {
+        "title": "Externe Dienste",
+        "p": "Bei Klicks auf GitHub- oder LinkedIn-Links gelten die Datenschutzbestimmungen der jeweiligen Anbieter."
+      }
+    }
+  },
+  "common": {
+    "profileAlt": "Stephan Gilles – Frontend Developer"
+  },
+  "icodomePage": {
+    "back": "Zurück zur Übersicht",
+    "eyebrow": "Konzept & Planung",
+    "title": "Icodome Scheid",
+    "subtitle": "Projektstudie – Beleg für Systemlogik, Planung und präzise Aufbereitung.",
+    "chips": [
+      "Strukturplanung",
+      "Systemdenken",
+      "Visualisierung",
+      "Projektstudie"
+    ],
+    "overview": {
+      "title": "Eckdaten",
+      "bullets": [
+        "Fokus: Strukturlogik & Prozessplanung",
+        "Transfer: Analytisches Denken für Softwareprojekte",
+        "Umfang: Grundrisse, Schnitte, Dokumentation",
+        "Ziel: Fehlervermeidung durch Vorplanung"
+      ]
+    },
+    "documents": {
+      "title": "Dokumentation",
+      "note": "Planunterlagen als PDF – ergänzt durch drei ausgewählte Projektansichten.",
+      "open": "PDF ansehen",
+      "download": "Download"
+    },
+    "credits": "Konzept: Dipl.-Ing. (FH) Architekt Thomas Hartlich · atelier kookaa · 2020.",
+    "gallery": {
+      "title": "Projektansichten",
+      "note": "Drei ausgewählte Visualisierungen aus der Vorentwurfsphase."
+    }
+  },
+  "journey": {
+    "kicker": "Mein Weg",
+    "title": "Von der Präzisionstechnik zum Frontend",
+    "subtitle": "Drei Stationen, eine gemeinsame Basis: Struktur und Qualität.",
+    "aria": "Karriere-Stationen",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "slides": {
+      "past": {
+        "tag": "Basis",
+        "title": "Büro & Organisation",
+        "text": "Strukturierte Abläufe, saubere Dokumentation und verlässliche Kommunikation."
+      },
+      "now": {
+        "tag": "Technik",
+        "title": "CNC & Präzision",
+        "text": "Analytisches Denken, Fehlersuche und ein Auge für kleinste Details – mein Qualitätsanspruch."
+      },
+      "future": {
+        "tag": "Heute",
+        "title": "Frontend Development",
+        "text": "Angular/TypeScript – ich entwickle klare Komponenten und stabile UI-Flows für moderne Web-Anwendungen."
+      }
+    }
+  },
+  "setup": {
+    "kicker": "Arbeitsumfeld",
+    "title": "Mein Setup",
+    "lead": "Ein fokussierter Arbeitsplatz für Entwicklung, Tests und kreative Problemlösung – effizient und strukturiert.",
+    "imageAlt": "Moderner Arbeitsplatz von Stephan Gilles"
+  }
+}

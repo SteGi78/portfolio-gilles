@@ -1,0 +1,51 @@
+<section class="wrap">
+  <div class="container grid">
+    <div class="copy">
+      <h2>{{ 'contact.title' | t }}</h2>
+      <p class="lead">{{ 'contact.text' | t }}</p>
+
+      <div class="quick">
+        <a class="btn primary" [href]="'mailto:' + email">{{ 'contact.actions.write' | t }}</a>
+        <button type="button" class="btn ghost" (click)="copyEmail()">{{ 'contact.actions.copy' | t }}</button>
+        <span class="toast" *ngIf="copied" aria-live="polite">{{ 'contact.toast.copied' | t }}</span>
+      </div>
+
+      <div class="hint panel ink-outline">
+        <strong>{{ 'contact.hint.title' | t }}</strong>
+        <p>{{ 'contact.hint.text' | t }}</p>
+      </div>
+    </div>
+
+    <form class="form panel ink-outline" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+      <h3>{{ 'contact.form.title' | t }}</h3>
+
+      <label class="field">
+        <span class="label">{{ 'contact.form.name.label' | t }}</span>
+        <input type="text" formControlName="name" [placeholder]="('contact.form.name.ph' | t)" />
+        <span class="err" *ngIf="submitted && form.controls.name.invalid">{{ 'contact.form.name.err' | t }}</span>
+      </label>
+
+      <label class="field">
+        <span class="label">{{ 'contact.form.email.label' | t }}</span>
+        <input type="email" formControlName="email" [placeholder]="('contact.form.email.ph' | t)" />
+        <span class="err" *ngIf="submitted && form.controls.email.invalid">{{ 'contact.form.email.err' | t }}</span>
+      </label>
+
+      <label class="field">
+        <span class="label">{{ 'contact.form.message.label' | t }}</span>
+        <textarea rows="5" formControlName="message" [placeholder]="('contact.form.message.ph' | t)"></textarea>
+        <span class="err" *ngIf="submitted && form.controls.message.invalid">{{ 'contact.form.message.err' | t }}</span>
+      </label>
+
+      <label class="check">
+        <input type="checkbox" formControlName="privacy" />
+        <span>{{ 'contact.form.privacy' | t }}</span>
+      </label>
+      <div class="err" *ngIf="submitted && form.controls.privacy.invalid">{{ 'contact.form.privacyErr' | t }}</div>
+
+      <button type="submit" class="btn primary full">{{ 'contact.form.submit' | t }}</button>
+
+      <p class="small">{{ 'contact.form.note' | t }}</p>
+    </form>
+  </div>
+</section>

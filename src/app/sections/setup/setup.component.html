@@ -1,0 +1,27 @@
+<section class="wrap">
+  <div class="container setup-shell">
+    <div class="specs panel ink-outline">
+      <div class="eyebrow">{{ 'setup.kicker' | t }}</div>
+      <h2 class="title">{{ 'setup.title' | t }}</h2>
+      <p class="lead">{{ 'setup.lead' | t }}</p>
+
+      <div class="spec-list">
+        <article class="spec-item" *ngFor="let device of devices">
+          <span class="device-type">{{ device.type }}</span>
+          <strong>{{ device.name }}</strong>
+        </article>
+      </div>
+    </div>
+
+    <div class="media panel ink-outline">
+      <img
+        src="assets/img/setup-workstation.jpeg"
+        [attr.alt]="('setup.imageAlt' | t)"
+        loading="lazy"
+        decoding="async"
+        width="1600"
+        height="1200"
+      />
+    </div>
+  </div>
+</section>

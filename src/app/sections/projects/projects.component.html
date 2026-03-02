@@ -1,0 +1,112 @@
+<section class="wrap">
+  <div class="container">
+    <div class="head projectsHead">
+      <span class="kicker">{{ 'projects.title' | t }}</span>
+      <h2 class="projectsTitle">{{ title() | t }}</h2>
+      <p class="subtitle projectsSubtitle">{{ intro() | t }}</p>
+
+      <div class="tabs projectTabs" role="tablist" aria-label="Projektkategorien">
+        <button
+          class="tab projectTab"
+          role="tab"
+          [class.active]="tab() === 'academy'"
+          (click)="setTab('academy')"
+          [attr.aria-selected]="tab() === 'academy'"
+        >
+          {{ 'projects.tabs.academy' | t }}
+        </button>
+
+        <button
+          class="tab projectTab"
+          role="tab"
+          [class.active]="tab() === 'private'"
+          (click)="setTab('private')"
+          [attr.aria-selected]="tab() === 'private'"
+        >
+          {{ 'projects.tabs.private' | t }}
+        </button>
+
+        <button
+          class="tab projectTab"
+          role="tab"
+          [class.active]="tab() === 'setup'"
+          (click)="setTab('setup')"
+          [attr.aria-selected]="tab() === 'setup'"
+        >
+          {{ 'nav.setup' | t }}
+        </button>
+      </div>
+    </div>
+
+    <div *ngIf="tab() === 'academy'" class="listLayout" role="tabpanel">
+      <div class="list" aria-label="Projektliste">
+        <button
+          type="button"
+          class="row"
+          *ngFor="let p of academyProjects; trackBy: trackById"
+          (click)="select(p.id)"
+          [class.active]="selectedId() === p.id"
+        >
+          <div class="rowLeft">
+            <span class="name">{{ p.titleKey | t }}</span>
+            <span class="mini" *ngIf="p.highlight">{{ 'projects.badge.featured' | t }}</span>
+          </div>
+          <div class="rowRight">{{ p.tags.join(' | ') }}</div>
+        </button>
+      </div>
+
+      <aside class="preview" aria-label="Projektvorschau">
+        <img [src]="selected().cover" [alt]="selected().titleKey | t" loading="lazy" />
+
+        <div class="previewBody">
+          <h3>{{ selected().titleKey | t }}</h3>
+          <p class="sub">{{ selected().subtitleKey | t }}</p>
+
+          <ul class="bullets">
+            <li *ngFor="let bullet of selected().bulletsKeys">{{ bullet | t }}</li>
+          </ul>
+
+          <div class="actions">
+            <a
+              class="btn primary"
+              *ngFor="let link of selected().links"
+              [href]="link.url"
+              [attr.target]="link.external ? '_blank' : null"
+              [attr.rel]="link.external ? 'noopener noreferrer' : null"
+            >
+              {{ link.labelKey | t }}
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div *ngIf="tab() === 'private'" class="grid privateGrid" role="tabpanel">
+      <article
+        class="card gallery"
+        *ngFor="let p of privateProjects; trackBy: trackById"
+        [class.highlight]="p.highlight"
+      >
+        <header class="cardHead">
+          <div>
+            <h3 class="cardTitle">{{ p.titleKey | t }}</h3>
+            <p class="cardSub">{{ p.subtitleKey | t }}</p>
+          </div>
+          <span class="badge" *ngIf="p.highlight">{{ 'projects.badge.showcase' | t }}</span>
+        </header>
+
+        <div class="galleryStrip">
+          <figure class="galleryItem" *ngFor="let image of p.images">
+            <img [src]="image" [alt]="p.titleKey | t" loading="lazy" />
+          </figure>
+        </div>
+
+        <p class="desc">{{ p.descKey | t }}</p>
+      </article>
+    </div>
+
+    <div *ngIf="tab() === 'setup'" class="setupTab" role="tabpanel">
+      <app-setup></app-setup>
+    </div>
+  </div>
+</section>

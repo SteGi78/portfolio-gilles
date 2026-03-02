@@ -1,0 +1,62 @@
+<section class="wrap">
+  <div class="container">
+    <div class="comic-page print-grain halftone ink-outline">
+      <header class="head">
+        <a class="back" [routerLink]="['/']" fragment="projects">← {{ 'icodomePage.back' | t }}</a>
+        <span class="caption">{{ 'icodomePage.eyebrow' | t }}</span>
+        <h1>{{ 'icodomePage.title' | t }}</h1>
+        <p class="subtitle">{{ 'icodomePage.subtitle' | t }}</p>
+
+        <ul class="chips">
+          <li class="chip" *ngFor="let c of ('icodomePage.chips' | tv)">{{ c }}</li>
+        </ul>
+      </header>
+
+      <section class="panel ink-outline gallery-panel" aria-label="Icodome Galerie">
+        <div class="gallery-head">
+          <h2>{{ 'icodomePage.gallery.title' | t }}</h2>
+          <p class="muted">{{ 'icodomePage.gallery.note' | t }}</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="shot" *ngFor="let image of images">
+            <img [src]="image" [alt]="('icodomePage.gallery.title' | t)" loading="lazy" />
+          </figure>
+        </div>
+      </section>
+
+      <div class="grid">
+        <article class="panel ink-outline">
+          <h2>{{ 'icodomePage.overview.title' | t }}</h2>
+          <ul class="bullets">
+            <li *ngFor="let b of ('icodomePage.overview.bullets' | tv)">{{ b }}</li>
+          </ul>
+        </article>
+
+        <article class="panel ink-outline">
+          <h2>{{ 'icodomePage.documents.title' | t }}</h2>
+          <p class="muted">{{ 'icodomePage.documents.note' | t }}</p>
+
+          <div class="doc-actions">
+            <a class="btn primary" [href]="pdfHref" target="_blank" rel="noopener">
+              {{ 'icodomePage.documents.open' | t }}
+            </a>
+            <a class="btn" [href]="pdfHref" download>
+              {{ 'icodomePage.documents.download' | t }}
+            </a>
+          </div>
+
+          <div class="pdf">
+            <iframe
+              title="Icodome Vorentwurf PDF"
+              [src]="pdfUrl"
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <p class="credits">{{ 'icodomePage.credits' | t }}</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

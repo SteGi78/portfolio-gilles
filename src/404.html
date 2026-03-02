@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Seite nicht gefunden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      (function () {
+        var redirect = '/' + location.pathname.split('/').slice(1).join('/') +
+          (location.search || '') + (location.hash || '');
+        sessionStorage.setItem('spa-redirect', redirect);
+        location.replace('/PortfolioGilles/');
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

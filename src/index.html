@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de" translate="no">
+<head>
+  <meta charset="utf-8">
+  <title>Stephan Gilles | Junior Frontend Developer</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Portfolio von Stephan Gilles: Angular-, TypeScript- und UI-orientierte Frontend-Projekte mit Fokus auf klare Struktur und wartbaren Code."
+  >
+  <meta property="og:title" content="Stephan Gilles | Junior Frontend Developer">
+  <meta
+    property="og:description"
+    content="Portfolio von Stephan Gilles: Angular-, TypeScript- und UI-orientierte Frontend-Projekte mit Fokus auf klare Struktur und wartbaren Code."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stegi78.github.io/PortfolioGilles/">
+  <meta property="og:image" content="https://stegi78.github.io/PortfolioGilles/assets/img/stephan.optim.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stephan Gilles | Junior Frontend Developer">
+  <meta
+    name="twitter:description"
+    content="Portfolio von Stephan Gilles: Angular-, TypeScript- und UI-orientierte Frontend-Projekte mit Fokus auf klare Struktur und wartbaren Code."
+  >
+  <meta name="twitter:image" content="https://stegi78.github.io/PortfolioGilles/assets/img/stephan.optim.png">
+  <meta name="theme-color" content="#1C1C1C">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+  <script>
+    (function () {
+      var redirect = sessionStorage.getItem('spa-redirect');
+      if (redirect) {
+        sessionStorage.removeItem('spa-redirect');
+        history.replaceState(null, '', redirect);
+      }
+    })();
+  </script>
+</body>
+</html>

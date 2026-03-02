@@ -1,0 +1,52 @@
+<section class="hero">
+  <button
+    type="button"
+    class="scrollHint"
+    (click)="goTo('about')"
+    [attr.aria-label]="('hero.scroll' | t)"
+  >
+    <span class="arrow">↓</span>
+    <span class="rail" aria-hidden="true"></span>
+  </button>
+
+  <div class="container hero-shell">
+    <div class="hero-main">
+      <div class="kicker">{{ 'hero.eyebrow' | t }}</div>
+
+      <h1 class="title">
+        <span class="line line--intro">{{ 'hero.title.before' | t }}</span>
+        <span class="name">{{ 'hero.title.name' | t }}</span>
+        <span class="line line--outro">{{ 'hero.title.after' | t }}</span>
+      </h1>
+
+      <div class="actions">
+        <button type="button" class="btn primary" (click)="goTo('projects')">
+          {{ 'hero.cta.projects' | t }}
+        </button>
+        <button type="button" class="btn ghost" (click)="goTo('contact')">
+          {{ 'hero.cta.contact' | t }}
+        </button>
+      </div>
+
+      <p class="hero-note">{{ 'hero.meta.compact' | t }}</p>
+    </div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-inner">
+        <span>{{ ('hero.ticker.0' | t) }}</span><span class="dot">•</span>
+        <span>{{ ('hero.ticker.1' | t) }}</span><span class="dot">•</span>
+        <span>{{ ('hero.ticker.2' | t) }}</span><span class="dot">•</span>
+        <span>{{ ('hero.ticker.3' | t) }}</span><span class="dot">•</span>
+      </div>
+
+      <div class="ticker-inner" aria-hidden="true">
+        <span>{{ ('hero.ticker.0' | t) }}</span><span class="dot">•</span>
+        <span>{{ ('hero.ticker.1' | t) }}</span><span class="dot">•</span>
+        <span>{{ ('hero.ticker.2' | t) }}</span><span class="dot">•</span>
+        <span>{{ ('hero.ticker.3' | t) }}</span><span class="dot">•</span>
+      </div>
+    </div>
+  </div>
+</section>

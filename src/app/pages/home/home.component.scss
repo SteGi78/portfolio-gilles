@@ -1,0 +1,12 @@
+:host{ display:block; }
+
+/*
+  Home-Seite = Section-Scrolling.
+  Ziel: Beim Klick auf "Über mich"/"Fähigkeiten" etc. darf oben nicht zu viel Luft sein.
+  -> Globale .section Paddings kommen aus styles.scss
+  -> Hero hat eigenes Spacing, deshalb outer padding hier auf 0.
+*/
+
+#hero.section{
+  padding: 0;
+}

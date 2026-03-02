@@ -1,0 +1,45 @@
+<section class="wrap">
+  <div class="container">
+    <div class="head">
+      <h2>{{ 'skills.title' | t }}</h2>
+      <p>{{ 'skills.subtitle' | t }}</p>
+    </div>
+
+    <div class="tech-grid" aria-label="Tech stack">
+      <figure class="tech panel panel-tight ink-outline" *ngFor="let item of techIcons">
+        <img class="tech__icon" [src]="item.icon" [alt]="item.labelKey | t" loading="lazy" decoding="async" width="64" height="64" />
+        <figcaption class="tech__label">{{ item.labelKey | t }}</figcaption>
+      </figure>
+    </div>
+
+    <div class="grid">
+      <article class="card panel panel-tight ink-outline" *ngFor="let g of groups">
+        <h3>{{ g.titleKey | t }}</h3>
+        <ul>
+          <li *ngFor="let k of g.itemKeys">
+            <span class="dot"></span> {{ k | t }}
+          </li>
+        </ul>
+      </article>
+
+      <article class="card panel panel-tight ink-outline note">
+        <h3>{{ 'skills.adapt.title' | t }}</h3>
+        <p>{{ 'skills.adapt.text' | t }}</p>
+        <button type="button" class="btn ghost" (click)="goTo('contact')">
+          {{ 'skills.adapt.cta' | t }}
+        </button>
+      </article>
+
+      <article class="card panel panel-tight ink-outline note">
+        <h3>{{ 'skills.interest.title' | t }}</h3>
+        <div class="chips">
+          <span class="chip">React</span>
+          <span class="chip">Vue.js</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Testing</span>
+        </div>
+        <p class="muted">{{ 'skills.interest.text' | t }}</p>
+      </article>
+    </div>
+  </div>
+</section>
