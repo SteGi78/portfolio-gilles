@@ -141,12 +141,12 @@ export class ProjectsComponent {
       links: [
         {
           labelKey: 'projects.links.live',
-          url: 'https://stegi78.github.io/PortfolioGilles/',
+          url: 'https://stegi78.github.io/portfolio-gilles/',
           external: true,
         },
         {
           labelKey: 'projects.links.code',
-          url: 'https://github.com/SteGi78/PortfolioGilles',
+          url: 'https://github.com/SteGi78/portfolio-gilles',
           external: true,
         },
       ],
