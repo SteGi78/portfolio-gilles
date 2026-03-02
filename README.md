@@ -1,6 +1,6 @@
 # PortfolioGilles
 
-Recruiter-taugliches Angular-Portfolio von Stephan Gilles.
+Angular-Portfolio von Stephan Gilles.
 
 ## Stack
 - Angular 17
